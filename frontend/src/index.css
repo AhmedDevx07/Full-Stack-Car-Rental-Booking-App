@@ -2,10 +2,85 @@
 @import "tailwindcss";
 * {
   font-family: "Urbanist", sans-serif;
+  scroll-behavior: smooth;
 }
 @theme {
   --color-primary: #2563eb;
   --color-primary-dull: #1f58d8;
-  --color-light: #f1f5f9;
-  --color-borderColor: #c4c7d2;
+  --color-light: #f8fafc;
+  --color-dark: #0f172a;
+  --color-borderColor: #e2e8f0;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-accent: #f97316;
+  --color-accent-hover: #ea580c;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+/* Custom Styles */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.shadow-premium {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hover-lift {
+  transition: all 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles */
+input:focus, select:focus, button:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #2563eb;
 }

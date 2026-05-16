@@ -7,7 +7,6 @@ import userRouter from "./routes/userRoutes.js";
 import ownerRouter from "./routes/ownerRoutes.js";
 import bookingRouter from "./routes/bookingRoutes.js";
 
-dns.setServers(["1.1.1.1", "8.8.8.8"]);
 // Initialize Express App
 const app = express();
 

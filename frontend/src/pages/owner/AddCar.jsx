@@ -71,7 +71,8 @@ const AddCar = () => {
     }
   };
 
-  const inputClasses = "w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all outline-none";
+  const inputClasses =
+    "w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all outline-none";
   const labelClasses = "block text-sm font-medium text-gray-700 mb-2";
 
   return (
@@ -87,18 +88,33 @@ const AddCar = () => {
         transition={{ duration: 0.5 }}
         className="mt-8 max-w-3xl"
       >
-        <form onSubmit={onSubmitHandler} className="bg-white rounded-2xl p-6 md:p-8 shadow-card space-y-6">
+        <form
+          onSubmit={onSubmitHandler}
+          className="bg-white rounded-2xl p-6 md:p-8 shadow-card space-y-6"
+        >
           {/* Image Upload */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-3">Car Image</label>
+            <label className="block text-sm font-medium text-gray-700 mb-3">
+              Car Image
+            </label>
             <div className="flex items-center gap-4">
               <label htmlFor="car-image" className="cursor-pointer">
-                <div className={`w-32 h-32 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center hover:border-blue-500 hover:bg-blue-50 transition-all ${imagePreview ? 'border-solid border-blue-500' : ''}`}>
+                <div
+                  className={`w-32 h-32 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center hover:border-blue-500 hover:bg-blue-50 transition-all ${imagePreview ? "border-solid border-blue-500" : ""}`}
+                >
                   {imagePreview ? (
-                    <img src={imagePreview} alt="Preview" className="w-full h-full object-cover rounded-xl" />
+                    <img
+                      src={imagePreview}
+                      alt="Preview"
+                      className="w-full h-full object-cover rounded-xl"
+                    />
                   ) : (
                     <div className="text-center">
-                      <img src={assets.upload_icon} alt="Upload" className="w-8 h-8 mx-auto mb-2 text-gray-400" />
+                      <img
+                        src={assets.upload_icon}
+                        alt="Upload"
+                        className="w-8 h-8 mx-auto mb-2 text-gray-400"
+                      />
                       <span className="text-xs text-gray-500">Upload</span>
                     </div>
                   )}
@@ -112,7 +128,9 @@ const AddCar = () => {
                 />
               </label>
               <div>
-                <p className="text-sm font-medium text-gray-900">Upload a picture of your car</p>
+                <p className="text-sm font-medium text-gray-900">
+                  Upload a picture of your car
+                </p>
                 <p className="text-xs text-gray-500 mt-1">JPG, PNG up to 5MB</p>
               </div>
             </div>
@@ -165,7 +183,9 @@ const AddCar = () => {
                 required
                 className={inputClasses}
                 value={car.pricePerDay}
-                onChange={(e) => setCar({ ...car, pricePerDay: e.target.value })}
+                onChange={(e) =>
+                  setCar({ ...car, pricePerDay: e.target.value })
+                }
               />
             </div>
             <div>
@@ -191,7 +211,9 @@ const AddCar = () => {
             <div>
               <label className={labelClasses}>Transmission</label>
               <select
-                onChange={(e) => setCar({ ...car, transmission: e.target.value })}
+                onChange={(e) =>
+                  setCar({ ...car, transmission: e.target.value })
+                }
                 value={car.transmission}
                 className={inputClasses}
                 required
@@ -226,7 +248,9 @@ const AddCar = () => {
                 required
                 className={inputClasses}
                 value={car.seating_capacity}
-                onChange={(e) => setCar({ ...car, seating_capacity: e.target.value })}
+                onChange={(e) =>
+                  setCar({ ...car, seating_capacity: e.target.value })
+                }
               />
             </div>
           </div>
@@ -245,6 +269,12 @@ const AddCar = () => {
               <option value="Los Angeles">Los Angeles</option>
               <option value="Houston">Houston</option>
               <option value="Chicago">Chicago</option>
+              <option value="Phoenix">Phoenix</option>
+              <option value="Philadelphia">Philadelphia</option>
+              <option value="San Antonio">San Antonio</option>
+              <option value="San Diego">San Diego</option>
+              <option value="Dallas">Dallas</option>
+              <option value="San Francisco">San Francisco</option>
             </select>
           </div>
 

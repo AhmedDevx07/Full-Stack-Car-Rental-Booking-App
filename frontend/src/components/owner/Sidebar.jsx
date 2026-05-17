@@ -41,7 +41,7 @@ const Sidebar = () => {
                 image
                   ? URL.createObjectURL(image)
                   : user?.image ||
-                    "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=300"
+                    "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
               }
               alt="Profile"
               className="w-20 h-20 rounded-full object-cover border-2 border-gray-200 hover:border-blue-500 transition-colors"

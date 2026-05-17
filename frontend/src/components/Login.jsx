@@ -82,7 +82,7 @@ const Login = () => {
                 <input
                   onChange={(e) => setName(e.target.value)}
                   value={name}
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all outline-none"
                   type="text"
                   required={state === "register"}

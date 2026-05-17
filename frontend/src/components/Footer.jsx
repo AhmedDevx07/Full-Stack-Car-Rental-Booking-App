@@ -23,7 +23,7 @@ const Footer = () => {
   const contactInfo = [
     { icon: "📍", text: "1234 Luxury Avenue, San Francisco" },
     { icon: "📞", text: "+1 555 123-4567" },
-    { icon: "✉️", text: "info@luxurycarrental.com" },
+    { icon: "✉️", text: "info@carrental.com" },
   ];
 
   return (

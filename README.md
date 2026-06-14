@@ -197,18 +197,18 @@ The frontend is configured for Vercel deployment with `vercel.json` configuratio
 
 ---
 
-## License
+## 👨‍💻 Author
 
-ISC License
+**Muhammad Ahmed (AhmedDevx07)**  
+ 
+### 🌐 Connect With Me
+
+* 🐙 GitHub: https://github.com/AhmedDevx07  
+* 💼 LinkedIn: https://linkedin.com/in/ahmeddevx07  
+* 🌐 Portfolio: https://ahmeddevx07.vercel.app/
 
 ---
-
-## Author
-
-Ahmed DevX
-
----
-
+ 
 ## Acknowledgments
 
 - Built with React, Node.js, Express, and MongoDB

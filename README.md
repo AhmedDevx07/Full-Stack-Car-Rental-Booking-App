@@ -207,11 +207,4 @@ The frontend is configured for Vercel deployment with `vercel.json` configuratio
 * 💼 LinkedIn: https://linkedin.com/in/ahmeddevx07  
 * 🌐 Portfolio: https://ahmeddevx07.vercel.app/
 
----
  
-## Acknowledgments
-
-- Built with React, Node.js, Express, and MongoDB
-- Styled with TailwindCSS
-- Animations powered by Motion
-- Images managed with ImageKit
